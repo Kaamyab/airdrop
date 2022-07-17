@@ -1,9 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Sk-Modernist;
+    src: url(/fonts/Sk-Modernist-Regular.otf) format("otf");
+    font-weight: 400;
+    font-display: fallback
+}
+@font-face {
+    font-family: Sk-Modernist;
+    src: url(/fonts/Sk-Modernist-Medium.otf) format("otf");
+    font-weight: 500;
+    font-display: fallback
+}
+@font-face {
+    font-family: Sk-Modernist;
+    src: url(/fonts/Sk-Modernist-Bold.otf) format("otf");
+    font-weight: 700;
+    font-display: fallback
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Sk-Modernist, sans-serif;
+  font-size: calc(100vw / 120);
+  direction: ltr;
+    background: rgb(39, 14, 27);
+    background: linear-gradient(230deg, rgb(39, 14, 27) 0%, rgb(29, 20, 47) 27%, rgb(15, 18, 37) 42%, rgb(12, 12, 12) 90%);
+
 }
 
 a {
