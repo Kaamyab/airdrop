@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/navbar/navbar'
 import Middle from '../components/content/middle'
+import Footer from '../components/content/footer'
 
 export default function Home() {
   return (
@@ -12,9 +13,10 @@ export default function Home() {
         <link rel="icon" href="/icon.svg" />
       </Head>
 
-      <div id='container' className='w-[85%] h-screen m-auto bg-transparent'>
+      <div id='container' className='w-[85%] h-full m-auto bg-transparent'>
         <Navbar />
         <Middle />
+        <Footer />
       </div>
 
     </div>
